@@ -28,8 +28,35 @@ console.log(doubledNumbers) // Должен вывести: [2, 4, 6, 8, 10]
 const numbers = [1, 2, 3, 4, 5]
 
 
-const mapArray = map(array, (element, index ) => {
-  return element * 2
+const transformedElement = (array, callback) => {
+  const result = []
 })
 
 console.log(mapArray);
+
+
+
+
+
+
+
+const numbers = [1, 2, 3, 4, 5]
+
+
+const numberFilter = (array, callback) => {
+  const result = []
+  for (let i = 0; i < array.length; i++) {
+    const element = array[i]
+    if (callback(element)) {
+      result.push(element)
+    }
+  }
+  return result
+}
+
+const oddNumbers = (element) => {
+  return element % 2 !== 0
+}
+
+const filteredOdds = numberFilter(numbers, oddNumbers)
+console.log(filteredOdds);
