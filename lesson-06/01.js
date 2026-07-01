@@ -23,4 +23,12 @@ const oddNumbers = filter(numbers, (element, index) => {
 console.log(oddNumbers) // Должен вывести: [1, 3, 5]
 */
 
-const filter = () => {}
+
+const price = [13, 23, 15, 34, 19, 21, 24]
+
+
+const filter = price.filter((p) => {
+  return p > 20
+})
+
+console.log(filter);
