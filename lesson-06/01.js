@@ -41,7 +41,6 @@ function filter(array, callback) {
 }
 
 
-
 const oddNumbers = (element) => {
   return element % 2 !== 0;
 }

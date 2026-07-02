@@ -46,4 +46,3 @@ const transformedArray = (element) => {
 console.log(map(numbers, transformedArray));
 
 
-
