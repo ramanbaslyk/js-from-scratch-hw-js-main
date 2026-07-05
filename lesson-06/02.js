@@ -39,8 +39,8 @@ function map(array, callback) {
 }
 
 
-const transformedArray = (element) => {
-  return element * 2
-}
+const transformedArray = map(numbers, (element, index) => {
+  return element * 2;
+});
 
-console.log(map(numbers, transformedArray));
+console.log(transformedArray);
