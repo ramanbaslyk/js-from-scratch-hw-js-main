@@ -46,5 +46,4 @@ const oddNumbers = (element) => {
 }
 
 
-
 console.log(filter(numbers, oddNumbers));
